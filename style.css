@@ -121,6 +121,11 @@ button.btn span{
 
 
 @media (max-width: 512px){
+  input.light::-webkit-color-swatch-wrapper,
+  input.dark::-webkit-color-swatch-wrapper{
+  padding: 0;
+  }
+
   body{
     max-width: 100%;
     padding: 10px;
@@ -142,13 +147,13 @@ button.btn span{
 
 
   #qr-code{
-    width: 95vw;
-    height: 95vh;
+    width: 350px;
+    height: 350px;
   }
 
   #qr-code img, #qr-code canvas{
-    max-width: 95vw !important;
-    max-height: 95vh !important;
+    max-width: 350px !important;
+    max-height: 350px !important;
   }
 }
 
@@ -161,4 +166,9 @@ button.btn span{
     margin-left: 0;
     margin-top: 0.7rem;
   }
+
+  input.light::-webkit-color-swatch-wrapper,
+  input.dark::-webkit-color-swatch-wrapper{
+  padding: 0;
+}
 }
