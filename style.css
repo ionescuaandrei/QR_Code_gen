@@ -15,6 +15,35 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.head{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ia{
+  font-style: italic;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.atestat{
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: #ccc;
 }
 
 input.light,
@@ -172,3 +201,4 @@ button.btn span{
   padding: 0;
 }
 }
+
