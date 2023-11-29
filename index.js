@@ -54,7 +54,7 @@ async function handleShare() {
         try {
             const base64url = await resolveDataUrl();
             const blob = await (await fetch(base64url)).blob();
-            const file = new File([blob], "QRCode.png", {
+            const file = new File([blob], "QRCodeByIonescuAndrei.png", {
                 type: blob.type,
             });
             await navigator.share({
@@ -62,7 +62,7 @@ async function handleShare() {
                 title: text,
             });
         } catch (error) {
-            alert("Your browser doesn't support sharing.");
+            alert("Browserul nu suporta otpiunea de share");
         }
     }, 100);
 }
